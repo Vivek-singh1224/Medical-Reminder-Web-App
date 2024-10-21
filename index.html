@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Medicine Reminder App</h1>
+        <form action="/addMedication" method="POST">
+            <div class="form-group">
+                <label for="name">Medicine Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dosage">Dosage:</label>
+                <input type="text" id="dosage" name="dosage" required>
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency (e.g., daily):</label>
+                <input type="text" id="frequency" name="frequency" required>
+            </div>
+            <div class="form-group">
+                <label for="reminderTime">Reminder Time:</label>
+                <input type="time" id="reminderTime" name="reminderTime" required>
+            </div>
+            <button type="submit">Add Medication</button>
+        </form>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/6f0c7dfe-51fd-4803-bbfc-efb5f3ccdfd6/webchat/v2.1/config.js"></script>
+</body>
+</html>
